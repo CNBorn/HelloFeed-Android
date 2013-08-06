@@ -38,6 +38,12 @@ public class MainActivity extends Activity {
 	
 	private void initList() {
 			planetsList.add(createPlanet("planet", "Mercury"));
+			planetsList.add(createPlanet("planet", "Venus"));
+			planetsList.add(createPlanet("planet", "Mars"));
+			planetsList.add(createPlanet("planet", "Jupiter"));
+			planetsList.add(createPlanet("planet", "Saturn"));
+			planetsList.add(createPlanet("planet", "Uranus"));
+			planetsList.add(createPlanet("planet", "Neptune"));
 	}
 	
 	private HashMap<String, String> createPlanet(String key, String name) {
