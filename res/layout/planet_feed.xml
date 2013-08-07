@@ -6,9 +6,9 @@
     
     <ImageView 
         android:id="@+id/icon"
-        android:layout_width="128px"
-        android:layout_height="128px"
-        android:layout_marginTop="3px"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="3dp"
         android:src="@drawable/planet_default"
      />
     
@@ -17,6 +17,6 @@
         	android:layout_width="wrap_content"
         	android:layout_height="wrap_content"
         	android:text="@+id/label"
-        	android:textSize="20px" />
+        	android:textSize="20sp" />
 
 </LinearLayout>
