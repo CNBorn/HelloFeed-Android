@@ -10,9 +10,9 @@ import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.AdapterView.AdapterContextMenuInfo;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
@@ -65,6 +65,14 @@ public class MainActivity extends Activity {
 		menu.add(1, 1, 1, "Details");
 		menu.add(1, 2, 2, "Delete");
 	}
+
+	@Override
+	public boolean onContextItemSelected(MenuItem item) {
+		int itemId = item.getItemId();
+		Toast.makeText(this, "Item id [" + itemId + "]", Toast.LENGTH_LONG).show();
+		return true;
+	}
+	
 	
 	private void initList() {
 			planetsList.add(createPlanet("planet", "Mercury"));
