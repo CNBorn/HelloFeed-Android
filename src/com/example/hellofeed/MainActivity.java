@@ -8,8 +8,12 @@ import java.util.Map;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
@@ -27,6 +31,16 @@ public class MainActivity extends Activity {
 		SimpleAdapter s = new SimpleAdapter(this, planetsList, android.R.layout.simple_list_item_1, new String[] {"planet"}, new int[] {android.R.id.text1});
 		
 		lv.setAdapter(s);
+		
+		lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+			
+			public void onItemClick(AdapterView<?> parentAdapter, View view, int position, long id) {
+				TextView clickedView = (TextView) view;
+				
+				Toast.makeText(MainActivity.this, "Item with id[" + id + "] - Position [" + position + "] - Planet [" + clickedView.getText() + "]",  Toast.LENGTH_LONG).show();
+
+			}
+		});
 	}
 
 	@Override
