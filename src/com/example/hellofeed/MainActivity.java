@@ -31,16 +31,17 @@ public class MainActivity extends Activity {
 		
 		ListView lv = (ListView) findViewById(R.id.listView);
 		
-		SimpleAdapter aAdpt = new SimpleAdapter(MainActivity.this, planetsList, android.R.layout.simple_list_item_1, new String[] {"planet"}, new int[] {android.R.id.text1});
+		SimpleAdapter aAdpt = new SimpleAdapter(MainActivity.this, planetsList, R.layout.planet_feed, new String[] {"planet"}, new int[] {R.id.label});
 		
 		lv.setAdapter(aAdpt);
 		
 		lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 			
 			public void onItemClick(AdapterView<?> parentAdapter, View view, int position, long id) {
-				TextView clickedView = (TextView) view;
+				//We may not always clicked on the TextView since we are using customized layout	
+				//TextView clickedView = (TextView) view;
 				
-				Toast.makeText(MainActivity.this, "Item with id[" + id + "] - Position [" + position + "] - Planet [" + clickedView.getText() + "]",  Toast.LENGTH_LONG).show();
+				Toast.makeText(MainActivity.this, "Item with id[" + id + "] - Position [" + position + "]",  Toast.LENGTH_LONG).show();
 
 			}
 		});
