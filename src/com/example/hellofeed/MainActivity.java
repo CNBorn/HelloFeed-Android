@@ -7,9 +7,12 @@ import java.util.Map;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.view.ContextMenu;
+import android.view.ContextMenu.ContextMenuInfo;
 import android.view.Menu;
 import android.view.View;
 import android.widget.AdapterView;
+import android.widget.AdapterView.AdapterContextMenuInfo;
 import android.widget.ListView;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
@@ -28,9 +31,9 @@ public class MainActivity extends Activity {
 		
 		ListView lv = (ListView) findViewById(R.id.listView);
 		
-		SimpleAdapter s = new SimpleAdapter(this, planetsList, android.R.layout.simple_list_item_1, new String[] {"planet"}, new int[] {android.R.id.text1});
+		SimpleAdapter aAdpt = new SimpleAdapter(MainActivity.this, planetsList, android.R.layout.simple_list_item_1, new String[] {"planet"}, new int[] {android.R.id.text1});
 		
-		lv.setAdapter(s);
+		lv.setAdapter(aAdpt);
 		
 		lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 			
@@ -41,6 +44,8 @@ public class MainActivity extends Activity {
 
 			}
 		});
+		
+		registerForContextMenu(lv);
 	}
 
 	@Override
@@ -48,6 +53,17 @@ public class MainActivity extends Activity {
 		// Inflate the menu; this adds items to the action bar if it is present.
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
+	}
+	
+	@Override
+	public void onCreateContextMenu(ContextMenu menu, View v,
+			ContextMenuInfo menuInfo) {
+		
+		super.onCreateContextMenu(menu,  v,  menuInfo);
+		
+		menu.setHeaderTitle("Options for this planet");
+		menu.add(1, 1, 1, "Details");
+		menu.add(1, 2, 2, "Delete");
 	}
 	
 	private void initList() {
