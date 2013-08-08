@@ -14,13 +14,11 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.SimpleAdapter;
-import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
-	List<Map<String, String>> planetsList = new ArrayList<Map<String, String>>();
+	List<Planet> planetsList = new ArrayList<Planet>();
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +29,8 @@ public class MainActivity extends Activity {
 		
 		ListView lv = (ListView) findViewById(R.id.listView);
 		
-		SimpleAdapter aAdpt = new SimpleAdapter(MainActivity.this, planetsList, R.layout.planet_feed, new String[] {"planet"}, new int[] {R.id.label});
+		//SimpleAdapter aAdpt = new SimpleAdapter(MainActivity.this, planetsList, R.layout.planet_feed, new String[] {"planet"}, new int[] {R.id.label});
+		PlanetAdapter aAdpt = new PlanetAdapter(planetsList, this);
 		
 		lv.setAdapter(aAdpt);
 		
@@ -76,21 +75,15 @@ public class MainActivity extends Activity {
 	
 	
 	private void initList() {
-			planetsList.add(createPlanet("planet", "Mercury"));
-			planetsList.add(createPlanet("planet", "Venus"));
-			planetsList.add(createPlanet("planet", "Mars"));
-			planetsList.add(createPlanet("planet", "Jupiter"));
-			planetsList.add(createPlanet("planet", "Saturn"));
-			planetsList.add(createPlanet("planet", "Uranus"));
-			planetsList.add(createPlanet("planet", "Neptune"));
+			planetsList.add(new Planet("Mercury", 10));
+			planetsList.add(new Planet("Venus", 20));
+			planetsList.add(new Planet("Mars", 30));
+			planetsList.add(new Planet("Jupiter", 40));
+			planetsList.add(new Planet("Saturn", 50));
+			planetsList.add(new Planet("Uranus", 60));
+			planetsList.add(new Planet("Neptune", 70));
 	}
-	
-	private HashMap<String, String> createPlanet(String key, String name) {
-		HashMap<String, String> planet = new HashMap<String, String>();
-		planet.put(key,  name);
-		
-		return planet;
-	}
+
 	
 
 }
