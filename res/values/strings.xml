@@ -6,4 +6,5 @@
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_planet_detail">PlanetDetailActivity</string>
 
+    <string name="distance_prompt">Distance (Miles, from Earth):</string>
 </resources>

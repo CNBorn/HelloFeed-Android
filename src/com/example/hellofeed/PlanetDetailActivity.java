@@ -16,11 +16,10 @@ public class PlanetDetailActivity extends Activity {
 		Intent intent = getIntent();
 		String planet_id = intent.getStringExtra(MainActivity.PLANETDETAIL_ID);
 		
-		TextView tv = new TextView(this);
-		tv.setTextSize(40);
-		tv.setText(planet_id);
+		TextView planet_name = (TextView) findViewById(R.id.planet_name);
+		planet_name.setText(planet_id);
+
 		
-		setContentView(tv);
 	}
 
 	@Override
