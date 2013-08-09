@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class PlanetDetailActivity extends Activity {
@@ -27,6 +28,12 @@ public class PlanetDetailActivity extends Activity {
 		TextView planet_distance = (TextView) findViewById(R.id.distance);
 		planet_distance.setText(planet.getDistance().toString());
 		
+		ImageView planet_img = (ImageView) findViewById(R.id.planet_image);
+		//Field f = R.getClass().getField(planet.getName());
+		//int id = f.getInt(null);
+		int id = getResources().getIdentifier("@drawable/" + planet.getName().toLowerCase(), "id", getPackageName());
+		planet_img.setImageResource(id);
+	
 	}
 
 	@Override

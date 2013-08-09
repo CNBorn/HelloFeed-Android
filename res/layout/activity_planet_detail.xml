@@ -16,6 +16,7 @@
         android:layout_height="240dp"
         android:src="@drawable/planet_default"
         android:layout_margin="5dp"
+        android:id="@+id/planet_image"
         />
     
     <TextView
