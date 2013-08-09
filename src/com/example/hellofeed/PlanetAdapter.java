@@ -7,7 +7,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
+
 
 public class PlanetAdapter extends ArrayAdapter<Planet> {
 	
@@ -28,8 +30,10 @@ public class PlanetAdapter extends ArrayAdapter<Planet> {
 			LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 			v = inflater.inflate(R.layout.planet_feed, null);
 			TextView tv = (TextView) v.findViewById(R.id.label);
-			
+			ImageView iv = (ImageView) v.findViewById(R.id.image);
+		
 			holder.planetNameView = tv;
+			holder.image = iv;
 			
 			v.setTag(holder);
 		}
@@ -39,12 +43,16 @@ public class PlanetAdapter extends ArrayAdapter<Planet> {
 		Planet p = planetList.get(position);
 		holder.planetNameView.setText(p.getName());
 		
+		String planet_name = MainActivity.planetsList.get(position).getName().toLowerCase();
+		int id = context.getResources().getIdentifier("@drawable/" + planet_name, "id", context.getPackageName());
+		holder.image.setImageResource(id);
+		
 		return v;
 	}
 	
 	private static class PlanetHolder {
+		public ImageView image;
 		public TextView planetNameView;
-		public TextView distView;
 	}	
 	
 }
