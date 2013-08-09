@@ -25,10 +25,7 @@ public class PlanetDetailActivity extends Activity {
 		TextView planet_detail = (TextView) findViewById(R.id.planet_detail);
 		int detail_id = getResources().getIdentifier("@string/planet_detail_" + planet.getName().toLowerCase(), "id", getPackageName());
 		planet_detail.setText(getString(detail_id));
-		
-		TextView planet_distance = (TextView) findViewById(R.id.distance);
-		planet_distance.setText(planet.getDistance().toString());
-		
+				
 		ImageView planet_img = (ImageView) findViewById(R.id.planet_image);
 		int id = getResources().getIdentifier("@drawable/" + planet.getName().toLowerCase(), "id", getPackageName());
 		planet_img.setImageResource(id);

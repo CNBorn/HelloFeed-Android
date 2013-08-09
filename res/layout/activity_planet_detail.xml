@@ -6,7 +6,7 @@
        <ScrollView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content">
-            <LinearLayout 
+           <LinearLayout 
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
                   android:orientation="vertical">
@@ -24,25 +24,12 @@
         	android:layout_height="wrap_content"
         	android:textSize="40sp"
         	android:id="@+id/planet_name" />
-    
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/distance_prompt" />
-    
-    <TextView
-        	android:layout_width="wrap_content"
-        	android:layout_height="wrap_content"
-        	android:id="@+id/distance" />
-    
+        
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         	android:id="@+id/planet_detail"
         />
-                
-                
-                
                 
             </LinearLayout>
       </ScrollView>

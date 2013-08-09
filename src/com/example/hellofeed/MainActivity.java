@@ -73,14 +73,14 @@ public class MainActivity extends Activity {
 	}
 	
 	private void initList() {
-			planetsList.add(new Planet("Mercury", 10));
-			planetsList.add(new Planet("Venus", 20));
-			planetsList.add(new Planet("Earth", 0));
-			planetsList.add(new Planet("Mars", 30));
-			planetsList.add(new Planet("Jupiter", 40));
-			planetsList.add(new Planet("Saturn", 50));
-			planetsList.add(new Planet("Uranus", 60));
-			planetsList.add(new Planet("Neptune", 70));
+			planetsList.add(new Planet("Mercury"));
+			planetsList.add(new Planet("Venus"));
+			planetsList.add(new Planet("Earth"));
+			planetsList.add(new Planet("Mars"));
+			planetsList.add(new Planet("Jupiter"));
+			planetsList.add(new Planet("Saturn"));
+			planetsList.add(new Planet("Uranus"));
+			planetsList.add(new Planet("Neptune"));
 	}
 
 	
