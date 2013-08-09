@@ -14,4 +14,35 @@ ranging from 100 K at night to 700 K during the day at some equatorial regions.
 The poles are constantly below 180 K. Mercury\'s axis has the smallest tilt of any of the Solar System\'s planets, but it has the largest orbital eccentricity. 
 At aphelion, Mercury is about 1.5 times as far from the Sun as it is at perihelion. Mercury\'s surface is heavily cratered and similar in appearance to the Moon, indicating that it has been geologically inactive for billions of years.
     </string>
+    
+    <string name="planet_detail_venus">
+        Venus is the second planet from the Sun, orbiting it every 224.7 Earth days.[11] The planet is named after the Roman goddess of love and beauty. After the Moon, it is the brightest natural object in the night sky, reaching an apparent magnitude of −4.6, bright enough to cast shadows.[13] Because Venus is an inferior planet from Earth, it never appears to venture far from the Sun: its elongation reaches a maximum of 47.8. Venus reaches its maximum brightness shortly before sunrise or shortly after sunset, for which reason it has been referred to by ancient cultures as the Morning Star or Evening Star.
+
+Venus is a terrestrial planet and is sometimes called Earth\'s \"sister planet\" because of their similar size, gravity, and bulk composition (Venus is both the closest planet to Earth and the planet closest in size to Earth). However, it has also been shown to be very different from Earth in other respects. It has the densest atmosphere of the four terrestrial planets, consisting of more than 96% carbon dioxide. The atmospheric pressure at the planet\'s surface is 92 times that of Earth\'s. With a mean surface temperature of 735 K, Venus is by far the hottest planet in the Solar System. It has no carbon cycle to lock carbon back into rocks and surface features, nor does it seem to have any organic life to absorb it in biomass. Venus is shrouded by an opaque layer of highly reflective clouds of sulfuric acid, preventing its surface from being seen from space in visible light. Venus may have possessed oceans in the past,[14] but these would have vaporized as the temperature rose due to a runaway greenhouse effect. The water has most probably photodissociated, and, because of the lack of a planetary magnetic field, the free hydrogen has been swept into interplanetary space by the solar wind.[16] Venus\'s surface is a dry desertscape interspersed with slab-like rocks and periodically refreshed by volcanism.
+    </string>
+    
+    <string name="planet_detail_earth">
+        Earth is the third planet from the Sun, and the densest and fifth-largest of the eight planets in the Solar System. It is also the largest of the Solar System\'s four terrestrial planets. It is sometimes referred to as the world or the Blue Planet.
+    </string>
+    
+    <string name="planet_detail_mars">
+        Mars is the fourth planet from the Sun and the second smallest planet in the Solar System. Named after the Roman god of war, it is often described as the "Red Planet", as the iron oxide prevalent on its surface gives it a reddish appearance.[14] Mars is a terrestrial planet with a thin atmosphere, having surface features reminiscent both of the impact craters of the Moon and the volcanoes, valleys, deserts, and polar ice caps of Earth. The rotational period and seasonal cycles of Mars are likewise similar to those of Earth, as is the tilt that produces the seasons. Mars is the site of Olympus Mons, the second highest known mountain within the Solar System (the tallest on a planet), and of Valles Marineris, one of the largest canyons. The smooth Borealis basin in the northern hemisphere covers 40% of the planet and may be a giant impact feature.[15][16] Mars has two known moons, Phobos and Deimos, which are small and irregularly shaped. These may be captured asteroids,[17][18] similar to 5261 Eureka, a Martian trojan asteroid.
+    </string>
+    
+    <string name="planet_detail_jupiter">
+        Jupiter is the fifth planet from the Sun and the largest planet in the Solar System.[11] It is a gas giant with mass one-thousandth that of the Sun but is two and a half times the mass of all the other planets in the Solar System combined. Jupiter is classified as a gas giant along with Saturn, Uranus and Neptune. Together, these four planets are sometimes referred to as the Jovian or outer planets. The planet was known by astronomers of ancient times,[12] and was associated with the mythology and religious beliefs of many cultures. The Romans named the planet after the Roman god Jupiter.[13] When viewed from Earth, Jupiter can reach an apparent magnitude of −2.94, bright enough to cast shadows,[14] and making it on average the third-brightest object in the night sky after the Moon and Venus. (Mars can briefly match Jupiter\'s brightness at certain points in its orbit.)
+    </string>
+    
+    <string name="planet_detail_saturn">
+        Saturn is the sixth planet from the Sun and the second largest planet in the Solar System, after Jupiter. Named after the Roman god of agriculture, Saturn, its astronomical symbol (♄) represents the god\'s sickle. Saturn is a gas giant with an average radius about nine times that of Earth.[10][11] While only one-eighth the average density of Earth, with its larger volume Saturn is just over 95 times more massive than Earth.[12][13][14]
+    </string>
+    
+    <string name="planet_detail_uranus">
+        Uranus is the seventh planet from the Sun. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System. Uranus is similar in composition to Neptune, and both are of different chemical composition than the larger gas giants Jupiter and Saturn. For this reason, astronomers sometimes place them in a separate category called "ice giants". Uranus\'s atmosphere, although similar to Jupiter\'s and Saturn\'s in its primary composition of hydrogen and helium, contains more "ices" such as water, ammonia, and methane, along with traces of hydrocarbons.[12] It is the coldest planetary atmosphere in the Solar System, with a minimum temperature of 49 K (−224.2 °C), and has a complex, layered cloud structure, with water thought to make up the lowest clouds, and methane the uppermost layer of clouds.[12] In contrast, the interior of Uranus is mainly composed of ices and rock.[11]
+    </string>
+    
+    <string name="planet_detail_neptune">
+        Neptune is the eighth and farthest planet from the Sun in the Solar System. It is the fourth-largest planet by diameter and the third-largest by mass. Among the gaseous planets in the solar system, Neptune is the most dense. Neptune is 17 times the mass of Earth and is slightly more massive than its near-twin Uranus, which is 15 times the mass of Earth but not as dense.[c] On average, Neptune orbits the Sun at a distance of 30.1 AU, approximately 30 times the Earth–Sun distance. Named for the Roman god of the sea, its astronomical symbol is ♆, a stylised version of the god Neptune\'s trident.
+    </string>
+    
 </resources>

@@ -23,7 +23,8 @@ public class PlanetDetailActivity extends Activity {
 		planet_name.setText(planet.getName());
 
 		TextView planet_detail = (TextView) findViewById(R.id.planet_detail);
-		planet_detail.setText(getString(R.string.planet_detail_mercury));
+		int detail_id = getResources().getIdentifier("@string/planet_detail_" + planet.getName().toLowerCase(), "id", getPackageName());
+		planet_detail.setText(getString(detail_id));
 		
 		TextView planet_distance = (TextView) findViewById(R.id.distance);
 		planet_distance.setText(planet.getDistance().toString());
