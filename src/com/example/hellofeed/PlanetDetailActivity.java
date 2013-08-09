@@ -19,6 +19,8 @@ public class PlanetDetailActivity extends Activity {
 		TextView planet_name = (TextView) findViewById(R.id.planet_name);
 		planet_name.setText(planet_id);
 
+		TextView planet_detail = (TextView) findViewById(R.id.planet_detail);
+		planet_detail.setText(getString(R.string.planet_detail_mercury));
 		
 	}
 

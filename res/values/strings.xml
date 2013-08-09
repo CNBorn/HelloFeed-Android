@@ -7,4 +7,11 @@
     <string name="title_activity_planet_detail">PlanetDetailActivity</string>
 
     <string name="distance_prompt">Distance (Miles, from Earth):</string>
+    
+    <string name="planet_detail_mercury"
+        >Mercury is the smallest and closest to the Sun of the eight planets in the Solar System, with an orbital period of about 88 Earth days. Seen from the Earth, it appears to move around its orbit in about 116 days, which is much faster than any other planet. This rapid motion may have led to it being named after the Roman deity Mercury, the fast-flying messenger to the gods. Because it has almost no atmosphere to retain heat, Mercury\'s surface experiences the greatest temperature variation of all the planets, 
+ranging from 100 K at night to 700 K during the day at some equatorial regions. 
+The poles are constantly below 180 K. Mercury\'s axis has the smallest tilt of any of the Solar System\'s planets, but it has the largest orbital eccentricity. 
+At aphelion, Mercury is about 1.5 times as far from the Sun as it is at perihelion. Mercury\'s surface is heavily cratered and similar in appearance to the Moon, indicating that it has been geologically inactive for billions of years.
+    </string>
 </resources>
