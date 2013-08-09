@@ -9,8 +9,13 @@
            <LinearLayout 
                   android:layout_width="wrap_content"
                   android:layout_height="wrap_content"
-                  android:orientation="vertical">
-                  
+                  android:orientation="vertical"
+                  android:layout_margin="10dp">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
     <ImageView 
         android:layout_width="240dp"
         android:layout_height="240dp"
@@ -20,11 +25,13 @@
         />
     
     <TextView
-        	android:layout_width="wrap_content"
+        	android:layout_width="fill_parent"
         	android:layout_height="wrap_content"
         	android:textSize="40sp"
+        	android:layout_gravity="right"
         	android:id="@+id/planet_name" />
-        
+    
+    </LinearLayout>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
