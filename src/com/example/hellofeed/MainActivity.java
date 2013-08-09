@@ -18,7 +18,7 @@ import android.widget.Toast;
 public class MainActivity extends Activity {
 
 	public final static String PLANETDETAIL_ID = "com.example.hellofeed.PLANETDETAIL_ID";
-	public List<Planet> planetsList = new ArrayList<Planet>();
+	public static List<Planet> planetsList = new ArrayList<Planet>();
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +39,7 @@ public class MainActivity extends Activity {
 			public void onItemClick(AdapterView<?> parentAdapter, View view, int position, long id) {
 				
 				Intent intent = new Intent(MainActivity.this, PlanetDetailActivity.class);
-				intent.putExtra(PLANETDETAIL_ID, planetsList.get(position).getName());
+				intent.putExtra(PLANETDETAIL_ID, Integer.toString(position));
 				startActivity(intent);
 				
 			}
