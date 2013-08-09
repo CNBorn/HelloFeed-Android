@@ -1,11 +1,10 @@
 package com.example.hellofeed;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.ContextMenu;
 import android.view.ContextMenu.ContextMenuInfo;
@@ -18,6 +17,7 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
+	public final static String PLANETDETAIL_ID = "com.example.hellofeed.PLANETDETAIL_ID";
 	List<Planet> planetsList = new ArrayList<Planet>();
 	
 	@Override
@@ -37,11 +37,12 @@ public class MainActivity extends Activity {
 		lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
 			
 			public void onItemClick(AdapterView<?> parentAdapter, View view, int position, long id) {
-				//We may not always clicked on the TextView since we are using customized layout	
-				//TextView clickedView = (TextView) view;
+				//Toast.makeText(MainActivity.this, "Item with id[" + id + "] - Position [" + position + "]",  Toast.LENGTH_LONG).show();
 				
-				Toast.makeText(MainActivity.this, "Item with id[" + id + "] - Position [" + position + "]",  Toast.LENGTH_LONG).show();
-
+				Intent intent = new Intent(MainActivity.this, PlanetDetailActivity.class);
+				intent.putExtra(PLANETDETAIL_ID, Long.toString(id));
+				startActivity(intent);
+				
 			}
 		});
 		

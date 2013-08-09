@@ -4,5 +4,6 @@
     <string name="app_name">HelloFeed</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_planet_detail">PlanetDetailActivity</string>
 
 </resources>
