@@ -29,7 +29,6 @@ public class MainActivity extends Activity {
 		
 		ListView lv = (ListView) findViewById(R.id.listView);
 		
-		//SimpleAdapter aAdpt = new SimpleAdapter(MainActivity.this, planetsList, R.layout.planet_feed, new String[] {"planet"}, new int[] {R.id.label});
 		PlanetAdapter aAdpt = new PlanetAdapter(planetsList, this);
 		
 		lv.setAdapter(aAdpt);
@@ -73,10 +72,10 @@ public class MainActivity extends Activity {
 		return true;
 	}
 	
-	
 	private void initList() {
 			planetsList.add(new Planet("Mercury", 10));
 			planetsList.add(new Planet("Venus", 20));
+			planetsList.add(new Planet("Earth", 0));
 			planetsList.add(new Planet("Mars", 30));
 			planetsList.add(new Planet("Jupiter", 40));
 			planetsList.add(new Planet("Saturn", 50));
